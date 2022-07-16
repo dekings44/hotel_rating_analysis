@@ -5,17 +5,20 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
+import numpy as np
+from time import sleep
+from random import randint
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
 # url = 'https://www.tripadvisor.co.uk/Hotels-g191-United_States-Hotels.html'
 
-url = 'https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtLB_JEGwAIB0gIkZDg0Y2M3MjYtZjc0Yy00OTI0LWFmNTEtNzFhOTc3MTY0ZjBk2AIG4AIB&sid=828d71aca926f8532f0cb1f47b533b81&aid=304142&ss=London&ssne=London&ssne_untouched=London&lang=en-gb&sb=1&src_elem=sb&src=searchresults&dest_id=-2601889&dest_type=city&checkin=2022-07-16&checkout=2022-07-17&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&offset=0'
+url = 'https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtLB_JEGwAIB0gIkZDg0Y2M3MjYtZjc0Yy00OTI0LWFmNTEtNzFhOTc3MTY0ZjBk2AIG4AIB&sid=828d71aca926f8532f0cb1f47b533b81&aid=304142&ss=London&ssne=London&ssne_untouched=London&lang=en-gb&sb=1&src_elem=sb&src=searchresults&dest_id=-2601889&dest_type=city&checkin=2022-07-16&checkout=2022-07-17&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&offset='
 
 header = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
 
-get_page = requests.get(url, headers=header)
+get_page = requests.get(url + str(url) + , headers=header)
 
 print(get_page.status_code)
 
@@ -24,6 +27,20 @@ response = get_page.content
 # print(len(response))
 
 webpage_data = BeautifulSoup(response, 'html5lib')
+
+
+
+pages = np.arange(0, 615, 25)
+
+for page in pages: 
+  
+  page = requests.get("https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1FCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQHoAQH4AQuIAgGoAgO4AtLB_JEGwAIB0gIkZDg0Y2M3MjYtZjc0Yy00OTI0LWFmNTEtNzFhOTc3MTY0ZjBk2AIG4AIB&sid=828d71aca926f8532f0cb1f47b533b81&aid=304142&ss=London&ssne=London&ssne_untouched=London&lang=en-gb&sb=1&src_elem=sb&src=searchresults&dest_id=-2601889&dest_type=city&checkin=2022-07-16&checkout=2022-07-17&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&offset=" + str(page), headers=header)
+  
+  soup = BeautifulSoup(response, 'html5lib')
+  
+  movie_div = soup.find_all('div', class_='lister-item mode-advanced')
+  
+  sleep(randint(2,10))
 
 # print(webpage_data)
 
