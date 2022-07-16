@@ -1,26 +1,51 @@
 hotel_name,rating_decription,reviews,room_type,room_price,rating
-Kensington Gardens Hotel,Very good,549 reviews,Double Room with Private Bathroom,£122,8.3
-Comfort Inn Victoria,Good,"1,303 reviews",Double Standard,£134,7.2
-Sidney Hotel London-Victoria,Good,"7,501 reviews",Double Room,£155,7.9
-Marlin Waterloo,Very good,"4,995 reviews","Classic Room, 1 King Bed",£249,8.2
-City View Hotel,Review score,"1,061 reviews",Standard Double Room,£79,5.2
-The Mitre by Innkeeper's Collection,Good,"1,406 reviews",Standard Double Room,£129,7.8
-Megaro Hotel,Very good,"1,243 reviews",Standard Double Room,£243,8.4
-"The Hoxton, Holborn",Fabulous,"1,222 reviews",Shoebox,£269,8.6
-Mowbray Court Hotel,Good,"4,459 reviews",Twin Room,£130,7.5
-Marble Arch Inn,Good,"1,120 reviews",Double Room with Shared Bathroom,£98,7.0
-Hilton London Bankside,uperb,"2,328 reviews",King Guest Room,£248,9.0
-Garden View Hotel,Review score,886 reviews,Double Standard,£97,6.6
-Apex London Wall Hotel,uperb,590 reviews,City King or Twin Room,£199,9.0
-DoubleTree by Hilton London – Docklands Riverside,Very good,"4,637 reviews",Queen Guest Room,£159,8.0
-72QT,Very good,"1,024 reviews",Double Room with Shared Bathroom,£94,8.4
-Best Western Mornington Hotel Hyde Park,Good,"2,775 reviews",Economy Double Room,£150,7.8
-room2 Chiswick Hometel,uperb,413 reviews,Snug,£161,9.3
-The Fitzrovia Belle Hotel,Very good,390 reviews,Double Room with Private Bathroom,£175,8.3
-London Marriott Hotel Canary Wharf,Very good,"2,046 reviews","Deluxe Room, Guest room, 1 King",£183,8.5
-easyHotel London City Shoreditch,Review score,"2,409 reviews",Double Room without Window,£98,6.8
-Novotel London Paddington,Very good,"1,891 reviews",Superior Queen Room with Sofa,£227,8.1
-Strathmore Hotel,Good,"1,547 reviews",Superior Double Room,£195,7.7
-The Gyle,Very good,972 reviews,Tiny King,£250,8.4
-The Cranley Hotel,Review score,"1,866 reviews",Superior Double Room,£108,4.9
-"Crowne Plaza London Ealing, an IHG Hotel",Very good,"1,122 reviews",Standard Queen Room with Walk-In Shower,£134,8.0
+Novotel London Tower Bridge,Fabulous,"2,960 reviews",Standard Room with Queen Bed and Sofa,£199,8.6
+Residence Inn by Marriott London Bridge,Very good,721 reviews,Studio Suite,£196,8.3
+"Holiday Inn Express London - Wandsworth, an IHG Hotel",Very good,"2,261 reviews",Double Room,£154,8.1
+"Hux Hotel, Kensington",Very good,653 reviews,Petite Double Room,£181,8.4
+Maitrise Hotel Maida Vale - London,Review score,"2,078 reviews",Double Room - No Window,£111,6.8
+Snoozebox Olympic Park,Good,"2,019 reviews",Standard Double Room,£76,7.9
+ibis Styles London Southwark - near Borough Market,Fabulous,"2,935 reviews",Standard Queen Room,£176,8.7
+The W14 Hotel,Good,"3,673 reviews",Twin Room,£126,7.8
+London City Airport Hotel,Good,"1,943 reviews",Double Room,£95,7.9
+Aparthotel Adagio London Stratford,uperb,"1,239 reviews",Studio,£134,9.0
+Chelsea Guest House,Good,"1,313 reviews",Standard Double Room,£77,7.8
+Rushmore Hotel,Good,"1,013 reviews",Small Double Room,£84,7.6
+The Tower Hotel,Very good,"11,310 reviews",Standard Sleeper Double Room,£146,8.1
+DoubleTree by Hilton Hotel London - Tower of London,Good,"10,915 reviews",Queen Room,£191,7.8
+The Collective Canary Wharf,Good,"3,125 reviews",Standard Studio,£148,7.1
+Hampton by Hilton London Park Royal,Very good,"1,576 reviews",Queen Room,£110,8.2
+Citadines Barbican London,Very good,"1,265 reviews",Classic Double or Twin Room,£188,8.2
+Thistle London Hyde Park Kensington Gardens,Good,905 reviews,Standard Double Room,£158,7.5
+nhow London,uperb,"2,191 reviews",nhow Superior Room,£232,9.1
+mk hotel london,Good,694 reviews,Standard Double Room,£121,7.9
+Hotel Meridiana,Good,"1,144 reviews",Basic Twin Room with Shared Bathroom,£75,7.9
+Hyde Park Boutique Hotel,Good,"2,157 reviews",Double Room,£101,7.1
+Vancouver Studios,Fabulous,891 reviews,Double Room,£156,8.8
+My Place Hotel,Review score,436 reviews,Standard Double Room,£85,6.5
+LSE Passfield Hall,Very good,"1,244 reviews",Twin Room with Shared Bathroom,£72,8.1
+Novotel London Tower Bridge,Fabulous,"2,960 reviews",Standard Room with Queen Bed and Sofa,£199,8.6
+Residence Inn by Marriott London Bridge,Very good,721 reviews,Studio Suite,£196,8.3
+"Holiday Inn Express London - Wandsworth, an IHG Hotel",Very good,"2,261 reviews",Double Room,£154,8.1
+"Hux Hotel, Kensington",Very good,653 reviews,Petite Double Room,£181,8.4
+Maitrise Hotel Maida Vale - London,Review score,"2,078 reviews",Double Room - No Window,£111,6.8
+Snoozebox Olympic Park,Good,"2,019 reviews",Standard Double Room,£76,7.9
+ibis Styles London Southwark - near Borough Market,Fabulous,"2,935 reviews",Standard Queen Room,£176,8.7
+The W14 Hotel,Good,"3,673 reviews",Twin Room,£126,7.8
+London City Airport Hotel,Good,"1,943 reviews",Double Room,£95,7.9
+Aparthotel Adagio London Stratford,uperb,"1,239 reviews",Studio,£134,9.0
+Chelsea Guest House,Good,"1,313 reviews",Standard Double Room,£77,7.8
+Rushmore Hotel,Good,"1,013 reviews",Small Double Room,£84,7.6
+The Tower Hotel,Very good,"11,310 reviews",Standard Sleeper Double Room,£146,8.1
+DoubleTree by Hilton Hotel London - Tower of London,Good,"10,915 reviews",Queen Room,£191,7.8
+The Collective Canary Wharf,Good,"3,125 reviews",Standard Studio,£148,7.1
+Hampton by Hilton London Park Royal,Very good,"1,576 reviews",Queen Room,£110,8.2
+Citadines Barbican London,Very good,"1,265 reviews",Classic Double or Twin Room,£188,8.2
+Thistle London Hyde Park Kensington Gardens,Good,905 reviews,Standard Double Room,£158,7.5
+nhow London,uperb,"2,191 reviews",nhow Superior Room,£232,9.1
+mk hotel london,Good,694 reviews,Standard Double Room,£121,7.9
+Hotel Meridiana,Good,"1,144 reviews",Basic Twin Room with Shared Bathroom,£75,7.9
+Hyde Park Boutique Hotel,Good,"2,157 reviews",Double Room,£101,7.1
+Vancouver Studios,Fabulous,891 reviews,Double Room,£156,8.8
+My Place Hotel,Review score,436 reviews,Standard Double Room,£85,6.5
+LSE Passfield Hall,Very good,"1,244 reviews",Twin Room with Shared Bathroom,£72,8.1

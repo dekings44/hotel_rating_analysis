@@ -1,26 +1,51 @@
 hotel_name,rating_decription,reviews,room_type,room_price,rating
-Charlie Hotel,Review score,"1,042 reviews",Double Room,£78,5.6
-The Royale Chulan Hyde Park Hotel,Good,797 reviews,Economy Double Room,£115,7.1
-ibis London Shepherds Bush - Hammersmith,Very good,"1,581 reviews",Double Room,£152,8.1
-Hellenic Hotel by Saba,Good,796 reviews,Twin Room with Private Bathroom,£93,7.1
-Garden View Hotel,Review score,886 reviews,Double Standard,£97,6.6
-London Marriott Hotel Marble Arch,Good,871 reviews,Deluxe King Room,£319,7.9
-Trebovir Hotel,Good,"3,186 reviews",Classic Double,£102,7.8
-Merit Kensington Hotel,Very good,"2,696 reviews",Superior Twin Room,£169,8.5
-The Langham London,uperb,"2,242 reviews",Double Room,£640,9.3
-Pembridge Palace Hotel,Good,"1,111 reviews",Standard Double Room,£153,7.8
-The Darlington Hyde Park,Very good,677 reviews,Double Room,£172,8.4
-Tony's House Hotel,Review score,651 reviews,Twin Room,£75,6.3
-Manor Hotel,Good,587 reviews,Studio,£90,7.2
-Roomzzz London Stratford,Fabulous,874 reviews,King Studio,£142,8.7
-The Melville Hotel Kings Cross,Good,"1,136 reviews",Double SweetRoom,£250,7.3
-ibis London Docklands Canary Wharf,Good,"2,592 reviews",Standard Double Room,£82,7.9
-Best Western Chiswick Palace & Suites London,Very good,"2,809 reviews",Economy Twin Room with Shared Bathroom,£122,8.1
-Fairway Hotel,Good,771 reviews,Double Room,£148,7.6
-The Gateway Hotel,Very good,"1,454 reviews",Twin Room,£90,8.3
-The Royal Foundation of St Katharine,Fabulous,"1,352 reviews",Standard Double Room,£160,8.7
-Best Western Corona Hotel,Good,"1,720 reviews",Double Room with Shared Bathroom,£157,7.4
-Arran House Hotel,Review score,"1,941 reviews",Double Studio,£105,6.9
-NOX Notting Hill,Good,"1,396 reviews",Standard Double Room,£143,7.8
-"Hotel Indigo London - Kensington, an IHG Hotel",Very good,"1,096 reviews",Double Room with Shared Bathroom,£218,8.3
-Wns HOTEL,Review score,650 reviews,,£85,6.5
+Balmoral House Hotel,Good,"1,054 reviews",Double or Twin Room,£151,7.8
+Days Inn Hyde Park,Good,"1,322 reviews",Double Room - Non-Smoking,£205,7.5
+Residence Inn by Marriott London Bridge,Very good,721 reviews,Studio Suite,£196,8.3
+"Radisson Blu Edwardian Berkshire Hotel, London",Very good,"2,681 reviews",Standard Double/Twin Room,£341,8.2
+Ascot Hyde Park Hotel,Review score,"1,640 reviews",Double Room,£124,5.8
+Thistle London Marble Arch,Good,"3,678 reviews",Standard Double Room,£277,7.6
+Leigh House Hotel,Good,698 reviews,Basement Double Room - private bathroom outside room,£120,7.6
+Staunton Hotel - B&B,Fabulous,"1,181 reviews",Standard Double Room,£224,8.7
+The Bedford Balham,Very good,618 reviews,Standard King Room,£119,8.4
+Marlin Aldgate Tower Bridge,Good,635 reviews,One-Bedroom Apartment,£269,7.9
+The Hayden Pub & Rooms,uperb,230 reviews,Deluxe Double or Twin Room,£194,9.4
+The County,Review score,"2,738 reviews",Budget Double Room,£72,4.8
+The Londoner,uperb,914 reviews,King Room,£512,9.2
+The Dirty Liquor Hotel at The Cherry,Very good,334 reviews,Double Room with Private Bathroom,£98,8.3
+331,Very good,"2,097 reviews",One-Bedroom Apartment,£178,8.0
+The Pilgrm,Good,510 reviews,Bunk Bed Room,£139,7.3
+Americana Hotel,Good,"1,383 reviews",Double Room,£111,7.8
+St. Pancras Renaissance Hotel London,Review score,330 reviews,Superior King Room - Barlow Wing,£343,6.3
+London K W Hotel,Exceptional,776 reviews,Double Room,£110,9.7
+41,Very good,"1,586 reviews",Executive King Room,£482,8.1
+Ravna Gora,Fabulous,860 reviews,Twin Room with Shared Bathroom,£103,8.6
+The Tophams Hotel,Very good,"1,035 reviews",Superior Double Room,£247,8.3
+W12 Rooms,Fabulous,272 reviews,Double Room,£149,8.8
+11 Cadogan Gardens Hotel & Apartments,Review score,393 reviews,Superior Queen Room,£420,5.2
+Four Stars Hotel,,,Double Room with Private Bathroom,£69,
+Balmoral House Hotel,Good,"1,054 reviews",Double or Twin Room,£151,7.8
+Days Inn Hyde Park,Good,"1,322 reviews",Double Room - Non-Smoking,£205,7.5
+Residence Inn by Marriott London Bridge,Very good,721 reviews,Studio Suite,£196,8.3
+"Radisson Blu Edwardian Berkshire Hotel, London",Very good,"2,681 reviews",Standard Double/Twin Room,£341,8.2
+Ascot Hyde Park Hotel,Review score,"1,640 reviews",Double Room,£124,5.8
+Thistle London Marble Arch,Good,"3,678 reviews",Standard Double Room,£277,7.6
+Leigh House Hotel,Good,698 reviews,Basement Double Room - private bathroom outside room,£120,7.6
+Staunton Hotel - B&B,Fabulous,"1,181 reviews",Standard Double Room,£224,8.7
+The Bedford Balham,Very good,618 reviews,Standard King Room,£119,8.4
+Marlin Aldgate Tower Bridge,Good,635 reviews,One-Bedroom Apartment,£269,7.9
+The Hayden Pub & Rooms,uperb,230 reviews,Deluxe Double or Twin Room,£194,9.4
+The County,Review score,"2,738 reviews",Budget Double Room,£72,4.8
+The Londoner,uperb,914 reviews,King Room,£512,9.2
+The Dirty Liquor Hotel at The Cherry,Very good,334 reviews,Double Room with Private Bathroom,£98,8.3
+331,Very good,"2,097 reviews",One-Bedroom Apartment,£178,8.0
+The Pilgrm,Good,510 reviews,Bunk Bed Room,£139,7.3
+Americana Hotel,Good,"1,383 reviews",Double Room,£111,7.8
+St. Pancras Renaissance Hotel London,Review score,330 reviews,Superior King Room - Barlow Wing,£343,6.3
+London K W Hotel,Exceptional,776 reviews,Double Room,£110,9.7
+41,Very good,"1,586 reviews",Executive King Room,£482,8.1
+Ravna Gora,Fabulous,860 reviews,Twin Room with Shared Bathroom,£103,8.6
+The Tophams Hotel,Very good,"1,035 reviews",Superior Double Room,£247,8.3
+W12 Rooms,Fabulous,272 reviews,Double Room,£149,8.8
+11 Cadogan Gardens Hotel & Apartments,Review score,393 reviews,Superior Queen Room,£420,5.2
+Four Stars Hotel,,,Double Room with Private Bathroom,£69,
