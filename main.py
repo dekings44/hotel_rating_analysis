@@ -31,6 +31,10 @@ print(len(response))
 
 webpage_data = BeautifulSoup(response, 'html5lib')
 
+h_name = webpage_data.find_all('h3', class_='a4225678b2')
+hotel_name = [name.text for name in h_name]
+print(hotel_name)
+
 
 
 # pages = np.arange(0, 615, 25)
