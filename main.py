@@ -43,6 +43,10 @@ h_desc = webpage_data.find_all('div', class_='b5cd09854e f0d4d6a2f5 e46e88563a')
 hotel_desc = [desc.text for desc in h_desc]
 print(hotel_desc)
 
+t_reviews = webpage_data.find_all('div', class_='d8eab2cf7f c90c0a70d3 db63693c62')
+total_reviews = [rev.text for rev in t_reviews]
+print(total_reviews)
+
 
 
 # pages = np.arange(0, 615, 25)
