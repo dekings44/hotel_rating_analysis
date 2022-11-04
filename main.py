@@ -35,6 +35,10 @@ h_name = webpage_data.find_all('h3', class_='a4225678b2')
 hotel_name = [name.text for name in h_name]
 print(hotel_name)
 
+h_rating = webpage_data.find_all('div', class_='b5cd09854e d10a6220b4')
+hotel_rating = [float(rating.text) for rating in h_rating]
+print(hotel_rating)
+
 
 
 # pages = np.arange(0, 615, 25)
