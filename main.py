@@ -13,7 +13,7 @@ import seaborn as sns
 import plotly.express as px
 
 # url = 'https://www.tripadvisor.co.uk/Hotels-g191-United_States-Hotels.html'
-pages = np.arange(1, 600, 25)
+pages = np.arange(1, 1200, 25)
 hotel_data = []
 
 for page in pages:
@@ -67,13 +67,16 @@ for page in pages:
   room_price = [price.text for price in r_price]
   #print(room_price)
 
-  hotel_data.append([hotel_name, hotel_rating, hotel_desc, total_reviews, dist_from_center, room_type, bed_type, room_price])
+  hotel_data.append([hotel_name, hotel_rating, hotel_desc, total_reviews, room_price])
 
-  print(hotel_data)
+  #print(hotel_data)
 
-# hotel_data = pd.DataFrame(hotel_data, columns=["Name", "Rating", "Description", "Total Reviews", "Distance from center", "Room Type", "Bed Type", "Room Price"])
+hotel_data1 = pd.DataFrame(hotel_data, columns=["Name", "Rating", "Description", "Total Reviews", "Room Price"])
 
-# hotel_data.head()
+#print(hotel_data1.head())
+
+
+hotel_data1.to_csv('hotel_data.csv', index = None)
 
 
 # pages = np.arange(0, 615, 25)
