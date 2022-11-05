@@ -55,6 +55,12 @@ r_type = webpage_data.find_all('span', class_='df597226dd')
 room_type = [room.text for room in r_type]
 print(room_type)
 
+b_type = webpage_data.find_all('div', class_='d8eab2cf7f')
+bed_type = [bed.text for bed in b_type]
+print(bed_type)
+
+
+
 
 
 # pages = np.arange(0, 615, 25)
