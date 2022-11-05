@@ -59,7 +59,9 @@ b_type = webpage_data.find_all('div', class_='d8eab2cf7f')
 bed_type = [bed.text for bed in b_type]
 print(bed_type)
 
-
+r_price = webpage_data.find_all('span', class_='fcab3ed991 fbd1d3018c e729ed5ab6')
+room_price = [price.text for price in r_price]
+print(room_price)
 
 
 
