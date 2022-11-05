@@ -47,6 +47,14 @@ t_reviews = webpage_data.find_all('div', class_='d8eab2cf7f c90c0a70d3 db63693c6
 total_reviews = [rev.text for rev in t_reviews]
 print(total_reviews)
 
+dist_from = webpage_data.find_all('span', class_='cb5ebe3ffb')
+dist_from_center = [dist.text for dist in dist_from]
+print(dist_from_center)
+
+r_type = webpage_data.find_all('span', class_='df597226dd')
+room_type = [room.text for room in r_type]
+print(room_type)
+
 
 
 # pages = np.arange(0, 615, 25)
