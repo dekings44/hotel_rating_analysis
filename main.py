@@ -13,15 +13,11 @@ import seaborn as sns
 import plotly.express as px
 
 # url = 'https://www.tripadvisor.co.uk/Hotels-g191-United_States-Hotels.html'
-pages = np.arange(1, 1200, 25)
-hotel_data = []
-
-for page in pages:
-  url = "https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1DCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4Aoq1lpsGwAIB0gIkZjA3N2ZjM2YtMzkzNi00ZDYyLWIzZTQtMTJjZGMyYTlhMWM02AIE4AIB&sid=828d71aca926f8532f0cb1f47b533b81&aid=304142&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Flabel%3Dgen173nr-1DCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4Aoq1lpsGwAIB0gIkZjA3N2ZjM2YtMzkzNi00ZDYyLWIzZTQtMTJjZGMyYTlhMWM02AIE4AIB%26sid%3D828d71aca926f8532f0cb1f47b533b81%26sb_price_type%3Dtotal%26%26&ss=London%2C+Greater+London%2C+United+Kingdom&is_ski_area=&ssne=Paris&ssne_untouched=Paris&checkin_year=2022&checkin_month=12&checkin_monthday=27&checkout_year=2022&checkout_month=12&checkout_monthday=28&efdco=1&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&search_pageview_id=e115a245801601aa&ac_suggestion_list_length=5&ac_suggestion_theme_list_length=0&ac_position=1&ac_langcode=en&ac_click_type=b&ac_meta=GhBlMTE1YTI0NTgwMTYwMWFhIAEoATICZW46BkxvbmRvbkAASgBQAA%3D%3D&dest_id=-2601889&dest_type=city&iata=LON&place_id_lat=51.507393&place_id_lon=-0.127634&search_pageview_id=e115a245801601aa&search_selected=true&ss_raw=London&offset="
+def hotel_data(url, file_name):
 
   header = {'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'}
 
-  page = requests.get(url + str(pages), headers=header)
+  page = requests.get(url, headers=header)
 
   #get_page = requests.get(url, headers=header)
 
@@ -67,16 +63,19 @@ for page in pages:
   room_price = [price.text for price in r_price]
   #print(room_price)
 
-  hotel_data.append([hotel_name, hotel_rating, hotel_desc, total_reviews, room_price])
+  my_data = {
+  'name': hotel_name,
+  'rating': hotel_rating,
+  'rating_desciption': hotel_desc,
+  'total_reviews': total_reviews,
+  'distance_from_center': dist_from_center,
+  'room_type': room_type,
+  'bed_type': bed_type,
+  'room_price': room_price
+  }
 
-  #print(hotel_data)
-
-hotel_data1 = pd.DataFrame(hotel_data, columns=["Name", "Rating", "Description", "Total Reviews", "Room Price"])
-
-#print(hotel_data1.head())
-
-
-hotel_data1.to_csv('hotel_data.csv', index = None)
+  hotel_data = pd.DataFrame(my_data)
+  hotel_data.to_csv(file_name, index = None)
 
 
 # pages = np.arange(0, 615, 25)
