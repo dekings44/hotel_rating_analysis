@@ -32,50 +32,54 @@ def hotel_data(url, file_name):
   sleep(randint(2,6))
 
   h_name = webpage_data.find_all('h3', class_='a4225678b2')
-  hotel_name = [name.text for name in h_name]
-  #print(hotel_name)
+  hotel_name = [name.text if h_name else '' for name in h_name ]
+  print(len(hotel_name))
 
   h_rating = webpage_data.find_all('div', class_='b5cd09854e d10a6220b4')
-  hotel_rating = [float(rating.text) for rating in h_rating]
-  #print(hotel_rating)
+  hotel_rating = [float(rating.text) if h_rating else '' for rating in h_rating ]
+  print(len(hotel_rating))
 
   h_desc = webpage_data.find_all('div', class_='b5cd09854e f0d4d6a2f5 e46e88563a')
-  hotel_desc = [desc.text for desc in h_desc]
-  #print(hotel_desc)
+  hotel_desc = [desc.text if h_desc else '' for desc in h_desc ]
+  print(len(hotel_desc))
 
   t_reviews = webpage_data.find_all('div', class_='d8eab2cf7f c90c0a70d3 db63693c62')
-  total_reviews = [rev.text for rev in t_reviews]
-  #print(total_reviews)
+  total_reviews = [rev.text if t_reviews else '' for rev in t_reviews ]
+  print(len(total_reviews))
 
-  dist_from = webpage_data.find_all('span', class_='cb5ebe3ffb')
-  dist_from_center = [dist.text for dist in dist_from]
-  #print(dist_from_center)
+  # dist_from = webpage_data.find_all('span', class_='cb5ebe3ffb')
+  # dist_from_center = [dist.text if dist_from else '' for dist in dist_from ]
+  # print(len(dist_from_center))
 
   r_type = webpage_data.find_all('span', class_='df597226dd')
-  room_type = [room.text for room in r_type]
-  #print(room_type)
+  room_type = [room.text if r_type else '' for room in r_type ]
+  print(len(room_type))
 
-  b_type = webpage_data.find_all('div', class_='d8eab2cf7f')
-  bed_type = [bed.text for bed in b_type]
-  #print(bed_type)
+  # b_type = webpage_data.find_all('div', class_='d8eab2cf7f')
+  # bed_type = [bed.text if b_type else '' for bed in b_type ]
+  # print(len(bed_type))
 
-  r_price = webpage_data.find_all('span', class_='fcab3ed991 fbd1d3018c e729ed5ab6')
-  room_price = [price.text for price in r_price]
-  #print(room_price)
+  r_price = webpage_data.find_all('span', {'data-testid': 'price-and-discounted-price'})
+  room_price = [price.text if r_price != ' ' else '' for price in r_price ]
+  print(len(room_price))
+  print(room_price)
 
   my_data = {
   'name': hotel_name,
   'rating': hotel_rating,
   'rating_desciption': hotel_desc,
   'total_reviews': total_reviews,
-  'distance_from_center': dist_from_center,
   'room_type': room_type,
-  'bed_type': bed_type,
   'room_price': room_price
   }
 
-  hotel_data = pd.DataFrame(my_data)
-  hotel_data.to_csv(file_name, index = None)
+  h_data = pd.DataFrame(my_data)
+  h_data.transpose()
+  h_data.to_csv(file_name, index=False,header=True, encoding='utf-8')
+
+
+
+hotel_data('https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1DCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AouloJsGwAIB0gIkMGRmMWU0N2EtZjg5YS00NmIzLWE2NTQtNmJmNGM4ZGVhMjM02AIE4AIB&sid=828d71aca926f8532f0cb1f47b533b81&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Flabel%3Dgen173nr-1DCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQPoAQGIAgGoAgO4AouloJsGwAIB0gIkMGRmMWU0N2EtZjg5YS00NmIzLWE2NTQtNmJmNGM4ZGVhMjM02AIE4AIB%26sid%3D828d71aca926f8532f0cb1f47b533b81%26sb_price_type%3Dtotal%26%26&ss=London&is_ski_area=0&ssne=London&ssne_untouched=London&dest_id=-2601889&dest_type=city&checkin_year=2022&checkin_month=12&checkin_monthday=24&checkout_year=2022&checkout_month=12&checkout_monthday=25&efdco=1&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1', 'hotel_data1.csv')
 
 
 # pages = np.arange(0, 615, 25)
